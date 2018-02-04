@@ -12,6 +12,9 @@ import json
 # sudo pip3 install json-rpc
 # sudo pip3 install werkzeug
 
+#start with:
+#python3 node.py
+
 @dispatcher.add_method
 def getwalletinfo():
     print("getwalletinfo")
