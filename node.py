@@ -11,9 +11,14 @@ import json
 # OR
 # sudo pip3 install json-rpc
 # sudo pip3 install werkzeug
+# OR (for windows users so the imports work locally)
+# pip install json-rpc --target=<path to this file> (e.g.: pip install json-rpc --target=C:\_dev\azenix-node)
+# pip install werkzeug --target=<path to this file> (e.g.: pip install json-rpc --target=C:\_dev\azenix-node)
 
 #start with:
 #python3 node.py
+# OR
+#py node.py
 
 @dispatcher.add_method
 def getwalletinfo():
@@ -21,7 +26,7 @@ def getwalletinfo():
     data = {
 		"walletname": "wallet.dat",
 		"walletversion": 139900,
-		"balance": 0.00000000,
+		"balance": 666.00000000,
 		"unconfirmed_balance": 0.00000000,
 		"immature_balance": 0.00000000,
 		"txcount": 0,
